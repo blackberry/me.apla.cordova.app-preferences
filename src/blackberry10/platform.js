@@ -19,8 +19,7 @@ AppPreferencesLocalStorage.prototype.fetch = function(successCallback, errorCall
 		key = args.dict + '.' + args.key;
 	
 	var result = window.localStorage.getItem (key);
-
-	console.log(" >>> fetch <<< value: " + result );
+	
 	var value = result;
 	if (result) {
 		try {
@@ -34,9 +33,7 @@ AppPreferencesLocalStorage.prototype.fetch = function(successCallback, errorCall
 };
 
 AppPreferencesLocalStorage.prototype.store = function(successCallback, errorCallback, dict, key, value) {
-
-	console.log( " >>> store <<< dict: " + dict + " key: " + key + " value: " + value );
-
+	
 	var self = this;
 
 	var args = this.prepareKey ('set', dict, key, value);
