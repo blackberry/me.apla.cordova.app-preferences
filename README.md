@@ -2,7 +2,7 @@ Application preferences Cordova plugin.
 -----------------------
 
 Store and fetch application preferences using platform facilities.
-Compatible with Cordova 3.x
+Compatible with Cordova 3.x and Cordova 4.x (BlackBerry 10)
 
 Installing
 ---
@@ -21,9 +21,9 @@ From a local clone:
 
 
 More information:
-[Command-line Interface Guide](http://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-line%20Interface).
+[Command-line Interface Guide](http://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface).
 
-[Using Plugman to Manage Plugins](http://cordova.apache.org/docs/en/edge/guide_plugin_ref_plugman.md.html).
+[Using Plugman to Manage Plugins](http://cordova.apache.org/docs/en/4.0.0/plugin_ref_plugman.md.html).
 
 
 Synopsis
@@ -56,7 +56,7 @@ Platforms
 1. Native execution on Android using `android.content.SharedPreferences`
 1. Native execution on Windows Phone using `IsolatedStorageSettings.ApplicationSettings`
 1. Native execution on Windows 8 using `IsolatedStorageSettings.ApplicationSettings`
-1. (untested) fallback using `localStorage`
+1. Execution on BlackBerry 10 using `localStorage`
 
 Notes
 ---
@@ -68,7 +68,7 @@ Tests
 ---
 Tests are available in `src/test.js`. After installing plugin you can add test code from this file and then launch `testPlugin()` function.
 
-iOS, Android and Windows Phone 8 tests pass ok at the moment.
+iOS, Android Windows Phone 8 and BlackBerry 10 tests pass ok at the moment.
 
 
 Preferences interface generator
