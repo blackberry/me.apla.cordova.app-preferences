@@ -38,7 +38,7 @@ AppPreferencesLocalStorage.prototype.store = function(successCallback, errorCall
 
 	var args = this.prepareKey ('set', dict, key, value);
 
-	if (args.key === undefined || args.value === undefined ) {
+	if (args.key == undefined && args.value == undefined ) {
 		errorCallback();
 		return;
 	}
